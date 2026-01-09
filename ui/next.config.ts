@@ -1,18 +1,18 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    buildActivity: false,
-  },
+  //devIndicators: {
+  //buildActivity: false,
+  //},
   typescript: {
-    // Remove this. Build fails because of route types
-    ignoreBuildErrors: true,
+  // Remove this. Build fails because of route types
+	ignoreBuildErrors: true,
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: '100mb',
+      bodySizeLimit: '2000mb',
     },
-    middlewareClientMaxBodySize: '100mb',
+    middlewareClientMaxBodySize: '2000mb',
   },
 };
 
